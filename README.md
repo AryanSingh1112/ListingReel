@@ -1,6 +1,5 @@
 # ListingReel
 
-> **GitHub repository description:** Turn property details and photos into fast, fact-grounded real-estate videos with narration, captions, procedural music, and built-in quality checks.
 
 ListingReel turns property facts and photos into a short, polished promotional video. It combines a web studio and command-line interface with a shared video-generation pipeline. The script is checked against the supplied facts, photos are assessed and matched using their filenames, narration and music are mixed, and the final MP4 is checked before delivery.
 
@@ -56,6 +55,11 @@ The sidebar also contains the light/dark appearance toggle. The Studio uses auto
 | `contact_sheet.jpg` | A storyboard assembled from frames sampled across scenes. |
 
 The repository includes a sample listing, photos, and sample outputs under [`samples/`](samples/). These are examples; each new video is generated from the details and photos supplied for that run.
+
+Outputs:
+
+<img width="1915" height="915" alt="Screenshot 2026-10-29 203551" src="https://github.com/user-attachments/assets/2984c45f-7fa5-44b4-86f1-64a2f94f0318" />
+
 
 ## Architecture
 
