@@ -58,6 +58,11 @@ The repository includes a sample listing, photos, and sample outputs under [`sam
 
 Outputs:
 
+<img width="1917" height="912" alt="Screenshot 2026-10-29 203219" src="https://github.com/user-attachments/assets/9a3a200c-a971-42c1-a055-90124629baa9" />
+
+<img width="1917" height="908" alt="Screenshot 2026-10-29 203501" src="https://github.com/user-attachments/assets/36e512c1-f287-41d9-9188-303da3094495" />
+
+
 <img width="1915" height="915" alt="Screenshot 2026-10-29 203551" src="https://github.com/user-attachments/assets/2984c45f-7fa5-44b4-86f1-64a2f94f0318" />
 
 
