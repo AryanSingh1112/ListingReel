@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "listingreel"
+version = "1.0.0"
+description = "Turn property details + photos into a beat-synced, fact-grounded promo video (MP4)."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24",
+  "scipy>=1.10",
+  "opencv-python-headless>=4.8",
+  "pillow>=10",
+  "pydantic>=2.5",
+  "pyyaml>=6",
+]
+
+[project.optional-dependencies]
+ui = ["streamlit>=1.36", "edge-tts>=6.1"]
+voice = ["edge-tts>=6.1", "kokoro-onnx>=0.3"]
+llm = ["anthropic>=0.40"]
+dev = ["pytest>=7"]
+
+[project.scripts]
+listingreel = "listingreel.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

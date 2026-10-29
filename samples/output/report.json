@@ -1,0 +1,182 @@
+{
+  "version": "1.0.0",
+  "preset": "preview",
+  "seed": 3305892093,
+  "tts": "none",
+  "script_source": "template",
+  "duration_s": 33.12,
+  "bpm": 96,
+  "render_seconds": 31.0,
+  "total_seconds": 40.9,
+  "audio": {
+    "voice": false,
+    "music": true,
+    "peak": 0.869
+  },
+  "images": [
+    {
+      "file": "00_exterior.jpg",
+      "size": "1000x706",
+      "quality": 0.82,
+      "sharpness": 1.0,
+      "exposure": 0.697,
+      "focal": [
+        0.567,
+        0.571
+      ],
+      "synthetic": false
+    },
+    {
+      "file": "02_living_room.jpg",
+      "size": "1024x694",
+      "quality": 0.885,
+      "sharpness": 1.0,
+      "exposure": 0.968,
+      "focal": [
+        0.515,
+        0.524
+      ],
+      "synthetic": false
+    }
+  ],
+  "scenes": [
+    {
+      "scene": 0,
+      "role": "hook",
+      "image": "00_exterior.jpg",
+      "motion": "pan",
+      "scrim": 0.55,
+      "text_contrast": 5.78,
+      "t0": 0.0,
+      "t1": 6.25,
+      "transition_out": "slide"
+    },
+    {
+      "scene": 1,
+      "role": "feature",
+      "image": "02_living_room.jpg",
+      "motion": "pan",
+      "scrim": 0.45,
+      "text_contrast": 6.06,
+      "t0": 6.25,
+      "t1": 10.625,
+      "transition_out": "crossfade"
+    },
+    {
+      "scene": 2,
+      "role": "feature",
+      "image": "02_living_room.jpg",
+      "motion": "detail",
+      "scrim": 0.45,
+      "text_contrast": 12.63,
+      "t0": 10.625,
+      "t1": 13.75,
+      "transition_out": "zoom"
+    },
+    {
+      "scene": 3,
+      "role": "feature",
+      "image": "00_exterior.jpg",
+      "motion": "detail",
+      "scrim": 0.45,
+      "text_contrast": 5.8,
+      "t0": 13.75,
+      "t1": 16.875,
+      "transition_out": "slide"
+    },
+    {
+      "scene": 4,
+      "role": "feature",
+      "image": "02_living_room.jpg",
+      "motion": "detail",
+      "scrim": 0.45,
+      "text_contrast": 12.77,
+      "t0": 16.875,
+      "t1": 20.0,
+      "transition_out": "crossfade"
+    },
+    {
+      "scene": 5,
+      "role": "feature",
+      "image": "00_exterior.jpg",
+      "motion": "detail",
+      "scrim": 0.45,
+      "text_contrast": 5.74,
+      "t0": 20.0,
+      "t1": 23.125,
+      "transition_out": "zoom"
+    },
+    {
+      "scene": 6,
+      "role": "price",
+      "image": "02_living_room.jpg",
+      "motion": "detail",
+      "scrim": 0.45,
+      "text_contrast": 6.01,
+      "t0": 23.125,
+      "t1": 26.25,
+      "transition_out": "dip"
+    },
+    {
+      "scene": 7,
+      "role": "cta",
+      "image": "00_exterior.jpg",
+      "motion": "detail",
+      "scrim": 0.45,
+      "text_contrast": 5.8,
+      "t0": 26.25,
+      "t1": 33.125,
+      "transition_out": null
+    }
+  ],
+  "qa": [
+    {
+      "check": "file exists",
+      "pass": true,
+      "detail": "2553 KB"
+    },
+    {
+      "check": "H.264 + yuv420p (plays everywhere)",
+      "pass": true,
+      "detail": "h264/yuv420p"
+    },
+    {
+      "check": "resolution",
+      "pass": true,
+      "detail": "540x960"
+    },
+    {
+      "check": "duration in target window",
+      "pass": true,
+      "detail": "33.1s (target 20-40s)"
+    },
+    {
+      "check": "audio stream present",
+      "pass": true,
+      "detail": "aac"
+    },
+    {
+      "check": "audio is audible",
+      "pass": true,
+      "detail": "mean -17.7 dB"
+    },
+    {
+      "check": "caption contrast >= 4.5:1 (WCAG AA)",
+      "pass": true,
+      "detail": "worst scene 5.74:1"
+    }
+  ],
+  "warnings": [
+    "00_exterior.jpg: low resolution (1000x706); it will look soft in HD output.",
+    "Image '01_exterior_street.jpg' is too small (354x235); need at least 240px.",
+    "02_living_room.jpg: low resolution (1024x694); it will look soft in HD output.",
+    "Only 2 usable image(s); 4-8 recommended. Photos will be reused as detail crops."
+  ],
+  "ai_usage": {
+    "script": "template",
+    "llm": "none",
+    "tts": "none",
+    "music": "procedural (numpy)",
+    "vision": "classical CV (spectral-residual saliency, Laplacian sharpness, DCT pHash)"
+  }
+}

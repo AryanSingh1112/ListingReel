@@ -1,0 +1,22 @@
+{
+  "name": "Skyline Residency",
+  "location": "Whitefield, Bengaluru",
+  "property_type": "2 BHK Apartment",
+  "price": "₹85 Lakh",
+  "features": [
+    "1,050 sq ft carpet area",
+    "Modular kitchen",
+    "Private balcony",
+    "Clubhouse and swimming pool",
+    "24x7 security"
+  ],
+  "cta": "Book your site visit today",
+  "contact": "+91 98765 43210",
+  "images": [
+    "images/00_exterior.jpg",
+    "images/01_exterior_street.jpg",
+    "images/02_living_room.jpg",
+    "images/kitchen.jpg",
+    "images/balcony.jpg"
+  ]
+}

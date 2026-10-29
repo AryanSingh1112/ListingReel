@@ -1,0 +1,151 @@
+{
+  "facts": [
+    {
+      "id": "name",
+      "label": "Property name",
+      "text": "Skyline Residency"
+    },
+    {
+      "id": "location",
+      "label": "Location",
+      "text": "Whitefield, Bengaluru"
+    },
+    {
+      "id": "type",
+      "label": "Property type",
+      "text": "2 BHK Apartment"
+    },
+    {
+      "id": "price",
+      "label": "Price",
+      "text": "₹85 Lakh"
+    },
+    {
+      "id": "f1",
+      "label": "Feature 1",
+      "text": "1,050 sq ft carpet area"
+    },
+    {
+      "id": "f2",
+      "label": "Feature 2",
+      "text": "Modular kitchen"
+    },
+    {
+      "id": "f3",
+      "label": "Feature 3",
+      "text": "Private balcony"
+    },
+    {
+      "id": "f4",
+      "label": "Feature 4",
+      "text": "Clubhouse and swimming pool"
+    },
+    {
+      "id": "f5",
+      "label": "Feature 5",
+      "text": "24x7 security"
+    },
+    {
+      "id": "cta",
+      "label": "Call to action",
+      "text": "Book your site visit today"
+    },
+    {
+      "id": "contact",
+      "label": "Contact",
+      "text": "+91 98765 43210"
+    }
+  ],
+  "script": {
+    "lines": [
+      {
+        "role": "hook",
+        "vo": "Introducing Skyline Residency, a 2 BHK apartment in Whitefield, Bengaluru.",
+        "headline": "Skyline Residency",
+        "subline": "Whitefield, Bengaluru",
+        "kicker": "2 BHK Apartment",
+        "fact_ids": [
+          "name",
+          "type",
+          "location"
+        ]
+      },
+      {
+        "role": "feature",
+        "vo": "Highlights include 1,050 sq ft carpet area.",
+        "headline": "1,050 sq ft carpet area",
+        "subline": null,
+        "kicker": "HIGHLIGHT",
+        "fact_ids": [
+          "f1"
+        ]
+      },
+      {
+        "role": "feature",
+        "vo": "Plus, modular kitchen.",
+        "headline": "Modular kitchen",
+        "subline": null,
+        "kicker": "HIGHLIGHT",
+        "fact_ids": [
+          "f2"
+        ]
+      },
+      {
+        "role": "feature",
+        "vo": "Along with private balcony.",
+        "headline": "Private balcony",
+        "subline": null,
+        "kicker": "HIGHLIGHT",
+        "fact_ids": [
+          "f3"
+        ]
+      },
+      {
+        "role": "feature",
+        "vo": "And clubhouse and swimming pool.",
+        "headline": "Clubhouse and swimming pool",
+        "subline": null,
+        "kicker": "HIGHLIGHT",
+        "fact_ids": [
+          "f4"
+        ]
+      },
+      {
+        "role": "feature",
+        "vo": "Plus, 24x7 security.",
+        "headline": "24x7 security",
+        "subline": null,
+        "kicker": "HIGHLIGHT",
+        "fact_ids": [
+          "f5"
+        ]
+      },
+      {
+        "role": "price",
+        "vo": "Priced at ₹85 Lakh.",
+        "headline": "₹85 Lakh",
+        "subline": "2 BHK Apartment",
+        "kicker": "PRICE",
+        "fact_ids": [
+          "price",
+          "type"
+        ]
+      },
+      {
+        "role": "cta",
+        "vo": "Book your site visit today. Call +91 98765 43210.",
+        "headline": "Book your site visit today",
+        "subline": "+91 98765 43210",
+        "kicker": "ENQUIRE NOW",
+        "fact_ids": [
+          "cta",
+          "contact"
+        ]
+      }
+    ],
+    "source": "template",
+    "notes": [
+      "Template script passed the strict grounding verifier."
+    ]
+  }
+}
