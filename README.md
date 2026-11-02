@@ -1,6 +1,6 @@
 # ListingReel
 
-
+> **GitHub repository description:** Turn property details and photos into fast, fact-grounded real-estate videos with narration, captions, procedural music, and built-in quality checks.
 
 ListingReel turns property facts and photos into a short, polished promotional video. It combines a web studio and command-line interface with a shared video-generation pipeline. The script is checked against the supplied facts, photos are assessed and matched using their filenames, narration and music are mixed, and the final MP4 is checked before delivery.
 
@@ -43,6 +43,8 @@ The Streamlit app has these sidebar pages:
 | **How it works** | Read an overview of the system and its grounding approach. |
 
 The sidebar also contains the light/dark appearance toggle. The Studio uses automatic narration and fast preview settings; it does not expose voice-provider or encoding-speed selectors. CLI users can still explicitly choose a preset and narration provider.
+
+Results generated in the Studio are kept between app restarts in the project-local `out/history/` folder. Each result has its own folder containing the MP4, captions, script, QA report, poster, storyboard, a small metadata manifest, and copies of the source photos used for that run. The Results page can preview, download, rename, and delete an individual result; deleting requires confirmation and only removes that result folder. These local history files are ignored by Git.
 
 ### Generated files
 
